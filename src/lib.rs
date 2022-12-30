@@ -16,6 +16,7 @@ impl Config {
             Some(arg) => arg,
             None => return Err("Didn't get a query string"),
         };
+        
         let file_path = match args.next() {
             Some(arg) => arg,
             None => return Err("Didn't get a file path"),
